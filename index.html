@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- TAB CUSTOMIZATION -->
+    <title>Login Form 1</title>
+    <link rel="icon" href="">
+    <!-- SOME META ELEMENTS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="">
+    <!-- CSS EXTERNAL FILE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ICONS LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="">
+            <div class="inputs">
+            <div class="inp">
+                <input type="email" placeholder=" " required>
+                <label>Email</label>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" placeholder=" " required minlength="12"maxlength="28">
+                <label>Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div>
+        <div class="text">
+            <div class="remember">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <div class="forget">
+                <a href="#">Forget Password?</a>
+            </div>
+        </div>
+        <input type="submit" value="LOGIN" class="login-btn">
+        <p>Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>

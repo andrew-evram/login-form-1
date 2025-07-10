@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: url(imgs/mountain-img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+:root {
+    --main-transparent-color: hsla(0, 0%, 100%, 0.714);
+    --main-black: #000000;
+    --main-white: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.login-form {
+    width: 300px;
+    padding: 35px 30px;
+    color: var(--main-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 7px (var(--main-black));
+    caret-color: var(--main-white);
+}
+.login-form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: default;
+}
+.login-form form .inputs {
+    margin-bottom: 18px;
+}
+.login-form form .inputs .inp {
+    border-bottom: 1px solid var(--main-white);
+    position: relative;
+}
+.login-form form .inputs .inp:first-child {
+    margin-bottom: 28px;
+}
+.login-form form .inputs input {
+    width: 90%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: var(--main-white);
+}
+.login-form form .inputs input:focus {
+    outline: none;
+    color: var(--main-white);
+}
+.login-form form .inputs label {
+    font-size: .8rem;
+    color: var(--main-transparent-color);
+    position: absolute;
+    left: 8px;
+    transition: .5s;
+    pointer-events: none;
+}
+.login-form form .inputs input:focus~label,
+.login-form form .inputs input:not(:placeholder-shown)~label {
+    font-size: .7rem;
+    transform: translateY(-90%);
+}
+.login-form form .inputs i {
+    position: absolute;
+    right: 4px;
+    pointer-events: none;
+}
+.login-form form .text {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-form form .text .remember input {
+    margin: 0;
+    margin-right: 4px;
+}
+.login-form form .text .remember label,
+.login-form form .text .forget a {
+    font-size: .75rem;
+    transition: .3s;
+}
+.login-form form .text .remember label:hover,
+.login-form form .text .forget a:hover {
+    color: var(--main-transparent-color);
+}
+.login-form form .login-btn {
+    width: 100%;
+    padding: 8px 0;
+    color: var(--main-black);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+.login-form form .login-btn:hover {
+    background-color: var(--main-transparent-color);
+}
+.login-form form p {
+    font-size: .8rem;
+    text-align: center;
+}
+.login-form form p a {
+    transition: .3s;
+}
+.login-form form p a:hover {
+    color: var(--main-transparent-color);
+}
